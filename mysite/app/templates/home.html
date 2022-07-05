@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'app/css/styles.css' %}">
+
+<img src="{% static 'app/image/sticker.png' %}" alt="">
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+<script src="{% static 'app/js/time.js'%}"></script>
+{% endblock %}
